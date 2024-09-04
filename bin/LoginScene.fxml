@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@styleForScene.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginSceneController">
+   <children>
+      <Label id="loginSceneLabel" fx:id="loginSceneLable" alignment="CENTER" contentDisplay="CENTER" layoutX="226.0" layoutY="78.0" prefHeight="17.0" prefWidth="149.0" text="Login Akun Anda" textAlignment="CENTER" />
+      <TextField fx:id="textFieldId" layoutX="226.0" layoutY="175.0" promptText="Masukkan ID Anda" />
+      <PasswordField fx:id="TextFieldPassword" layoutX="226.0" layoutY="239.0" promptText="Masukkan dengan benar" />
+      <Label id="loginSceneLabel" fx:id="loginSceneLable" alignment="CENTER" layoutX="226.0" layoutY="158.0" prefHeight="17.0" prefWidth="149.0" text="ID Anda" />
+      <Label id="loginSceneLabel" fx:id="loginSceneLable" alignment="CENTER" layoutX="225.0" layoutY="222.0" prefHeight="17.0" prefWidth="149.0" text="Password" />
+      <Button id="btnYes" fx:id="btnYes" layoutX="197.0" layoutY="300.0" mnemonicParsing="false" onAction="#btnLoginClicked" prefHeight="25.0" prefWidth="205.0" text="Login" textAlignment="JUSTIFY" />
+      <Label fx:id="errorLabel" alignment="CENTER" layoutY="274.0" prefHeight="17.0" prefWidth="600.0" textFill="red" />
+   </children>
+</AnchorPane>

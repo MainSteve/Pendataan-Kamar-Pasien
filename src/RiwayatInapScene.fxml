@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="background" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" stylesheets="@styleForScene.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RiwayatInapSceneController">
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="600.0">
+         <bottom>
+            <AnchorPane prefHeight="22.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label id="labelBawah" fx:id="labelBawah" layoutY="3.0" prefHeight="17.0" prefWidth="600.0" text="Made by Khoiz" />
+               </children>
+            </AnchorPane>
+         </bottom>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TableView id="tableView" fx:id="tableView" layoutY="39.0" prefHeight="307.0" prefWidth="447.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="39.0">
+                     <columns>
+                        <TableColumn fx:id="idColumn" prefWidth="32.0" text="ID" />
+                        <TableColumn fx:id="namaColumn" prefWidth="154.0" text="Nama" />
+                        <TableColumn fx:id="nikColumn" prefWidth="85.0" text="NIK" />
+                        <TableColumn fx:id="tanggalKeluarColumn" minWidth="8.0" prefWidth="95.0" text="Tanggal Keluar" />
+                        <TableColumn fx:id="actionColumn" minWidth="0.0" text="Action" />
+                     </columns>
+                  </TableView>
+                  <Label id="labelJudul" fx:id="labelJudul" prefHeight="40.0" prefWidth="447.0" text="Riwayat Inap" />
+               </children>
+            </AnchorPane>
+         </center>
+         <left>
+            <AnchorPane id="slider" fx:id="slider" prefHeight="346.0" prefWidth="153.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox alignment="CENTER" layoutX="32.0" layoutY="14.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Button id="btnInMenu" fx:id="btnInMenu" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#btnPasienRawatInapOnClicked" prefHeight="67.0" prefWidth="159.0" text="Pasien Rawat Inap" wrapText="true">
+                           <graphic>
+                              <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@img/list.png" />
+                                 </image></ImageView>
+                           </graphic>
+                        </Button>
+                        <Button id="btnInMenu" fx:id="btnInMenu" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#btnRegistrasiPasienOnClicked" prefHeight="67.0" prefWidth="159.0" text="Registrasi Pasien">
+                           <graphic>
+                              <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@img/edit.png" />
+                                 </image></ImageView>
+                           </graphic>
+                        </Button>
+                        <Button id="btnInMenu" fx:id="btnInMenu" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#btnRiwayatInapOnClicked" prefHeight="67.0" prefWidth="159.0" text="Riwayat Inap">
+                           <graphic>
+                              <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@img/history.png" />
+                                 </image></ImageView>
+                           </graphic>
+                        </Button>
+                        <Button id="btnInMenu" fx:id="btnInMenu" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#btnDaftarRawatInapOnClicked" prefHeight="67.0" prefWidth="159.0" text="Daftar Rawat Inap">
+                           <graphic>
+                              <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@img/bed.png" />
+                                 </image></ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </left>
+         <top>
+            <AnchorPane prefHeight="32.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label id="welcomeLabel" fx:id="welcomeLabel" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="510.0" text="" />
+                  <Button id="btnLogout" fx:id="btnLogout" alignment="BASELINE_LEFT" layoutX="510.0" mnemonicParsing="false" onAction="#btnLogoutOnClicked" prefHeight="32.0" prefWidth="90.0" text="Logout">
+                     <graphic>
+                        <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/logout.png" />
+                           </image></ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

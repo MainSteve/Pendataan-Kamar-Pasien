@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="background" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" stylesheets="@styleForScene.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DetailRiwayatPasienRawatInapSceneController">
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="600.0">
+         <bottom>
+            <AnchorPane prefHeight="22.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label id="labelBawah" fx:id="labelBawah" layoutY="3.0" prefHeight="17.0" prefWidth="600.0" text="Made by Khoiz" />
+               </children>
+            </AnchorPane>
+         </bottom>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label id="labelDetail" fx:id="labelDetail" layoutX="14.0" layoutY="40.0" text="Nama" />
+                  <TextField fx:id="namaPasien" editable="false" layoutX="14.0" layoutY="57.0" />
+                  <Label id="labelDetail" fx:id="labelDetail" layoutX="14.0" layoutY="91.0" text="NIK" />
+                  <TextField fx:id="nikPasien" editable="false" layoutX="14.0" layoutY="108.0" />
+                  <Button id="btnNo" fx:id="btnYes" layoutX="14.0" layoutY="269.0" mnemonicParsing="false" onAction="#btnKembaliOnClicked" text="Kembali" />
+                  <Label id="labelJudul" fx:id="labelJudul" layoutY="-2.0" prefHeight="42.0" prefWidth="600.0" text="Detail Riwayat Pasien yang Dirawat Inap" />
+                  <TextField fx:id="tanggalLahirPasien" editable="false" layoutX="14.0" layoutY="162.0" />
+                  <Label id="labelDetail" fx:id="labelDetail" layoutX="14.0" layoutY="145.0" text="Tanggal Lahir" />
+                  <TextField fx:id="nomorRuanganPasien" editable="false" layoutX="14.0" layoutY="215.0" />
+                  <Label id="labelDetail" fx:id="labelDetail" layoutX="14.0" layoutY="198.0" text="Nomor Ruangan" />
+                  <Label id="labelDetail" fx:id="labelDetail" layoutX="226.0" layoutY="40.0" text="Kelas Ruangan" />
+                  <TextField fx:id="kelasRuanganPasien" editable="false" layoutX="226.0" layoutY="57.0" />
+                  <Label id="labelDetail" fx:id="labelDetail" layoutX="226.0" layoutY="91.0" text="Tanggal Keluar" />
+                  <TextField fx:id="tanggalKeluarPasien" editable="false" layoutX="226.0" layoutY="108.0" />
+                  <Label id="labelDetail" fx:id="labelDetail" layoutX="226.0" layoutY="198.0" text="Penginput Terakhir" />
+                  <TextField fx:id="penginputTerakhirPasien" editable="false" layoutX="226.0" layoutY="215.0" />
+               </children>
+            </AnchorPane>
+         </center>
+         <top>
+            <AnchorPane prefHeight="32.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label id="welcomeLabel" fx:id="welcomeLabel" layoutX="-1.0" layoutY="-2.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="512.0" text="" />
+                  <Button id="btnLogout" fx:id="btnLogout" alignment="BASELINE_LEFT" layoutX="510.0" mnemonicParsing="false" onAction="#btnLogoutOnClicked" prefHeight="32.0" prefWidth="90.0" text="Logout">
+                     <graphic>
+                        <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/logout.png" />
+                           </image></ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>
